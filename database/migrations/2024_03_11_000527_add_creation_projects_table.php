@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->text('description')->nullable();
-            $table->string('technologies');
+            $table->unsignedBigInteger('type_id')->nullable();
             $table->date('creation_date');
             $table->timestamps();
         });

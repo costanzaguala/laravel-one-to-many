@@ -4,13 +4,12 @@
 
 @section('main-content')
     <div class="row">
+        <h1 class="text-center">
+            Add project
+        </h1>
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="text-center">
-                        Add project
-                    </h1>
-                    <br>
                     <form action="{{ route('admin.projects.store') }}" method="POST">
                         @csrf
                         <div class="mb-3">

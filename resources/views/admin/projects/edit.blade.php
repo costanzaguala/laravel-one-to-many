@@ -4,13 +4,12 @@
 
 @section('main-content')
     <div class="row">
+        <h1 class="text-center">
+            Edit project: {{ $project->name }}
+        </h1>
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="text-center text-success">
-                        Edit project: {{ $project->name }}
-                    </h1>
-                    <br>
                     <form action="{{ route('admin.projects.update', ['project' => $project->id]) }}" method="POST">
                         @csrf
                         @method('PUT')

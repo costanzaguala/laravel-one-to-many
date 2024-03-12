@@ -24,6 +24,12 @@
                         <li class="mb-3">
                             <a class="text-decoration-none" href="{{ route('admin.projects.create') }}">Add project</a>
                         </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none" href="{{ route('admin.types.index') }}">Types of projects</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="text-decoration-none" href="{{ route('admin.types.create') }}">Add a type</a>
+                        </li>
                     </ul>
 
                     <form method="POST" action="{{ route('logout') }}">
